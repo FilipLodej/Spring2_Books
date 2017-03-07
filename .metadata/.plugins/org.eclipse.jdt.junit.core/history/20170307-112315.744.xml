@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="HomeControllerTest.testHomePage" project="webstore" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="testHomePage" classname="pl.spring.demo.web.controller.HomeControllerTest" time="0.884"/>
+</testrun>

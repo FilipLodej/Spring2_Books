@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BookControllerTest" project="webstore" tests="4" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="pl.spring.demo.web.controller.BookControllerTest" incomplete="true">
+    <testcase name="testSearchResultBookPage" classname="pl.spring.demo.web.controller.BookControllerTest" incomplete="true"/>
+    <testcase name="testSearchBookPage" classname="pl.spring.demo.web.controller.BookControllerTest" incomplete="true"/>
+    <testcase name="testBooksListPage" classname="pl.spring.demo.web.controller.BookControllerTest" incomplete="true"/>
+    <testcase name="testAllBooksListPage" classname="pl.spring.demo.web.controller.BookControllerTest" incomplete="true"/>
+  </testsuite>
+</testrun>

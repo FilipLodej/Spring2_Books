@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginControllerTest" project="webstore" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="pl.spring.demo.web.controller.LoginControllerTest" time="0.946">
+    <testcase name="testLoginPage" classname="pl.spring.demo.web.controller.LoginControllerTest" time="0.929"/>
+    <testcase name="testLoginFailedPage" classname="pl.spring.demo.web.controller.LoginControllerTest" time="0.017"/>
+  </testsuite>
+</testrun>

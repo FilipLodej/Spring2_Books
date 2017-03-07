@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Tue Mar 07 13:26:24 CET 2017
+org.eclipse.jst.jee.server\:/binary\:C\:\\projects\\crash_course\\eclipse\\${env.BASE_DIR}\\maven\\repo\\org\\springframework\\spring-web\\4.0.3.RELEASE\\spring-web-4.0.3.RELEASE.jar=WEB-INF/lib/spring-web-4.0.3.RELEASE.jar
+org.eclipse.jst.j2ee.server\:spring-data-model=WEB-INF/lib/spring-data-model-1.0-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:spring-data-jpa=WEB-INF/lib/spring-data-jpa-1.0-SNAPSHOT.jar

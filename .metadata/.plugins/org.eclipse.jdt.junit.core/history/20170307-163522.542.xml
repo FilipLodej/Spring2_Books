@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BookControllerTest" project="webstore" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="pl.spring.demo.web.controller.BookControllerTest" time="2.558">
+    <testcase name="testBookPage" classname="pl.spring.demo.web.controller.BookControllerTest" time="2.351"/>
+    <testcase name="testSearchResultBookPage" classname="pl.spring.demo.web.controller.BookControllerTest" time="0.072"/>
+    <testcase name="testSearchBookPage" classname="pl.spring.demo.web.controller.BookControllerTest" time="0.021"/>
+    <testcase name="testBooksListPage" classname="pl.spring.demo.web.controller.BookControllerTest" time="0.027"/>
+    <testcase name="testAllBooksListPage" classname="pl.spring.demo.web.controller.BookControllerTest" time="0.025"/>
+    <testcase name="testBookAddPageMethodGet" classname="pl.spring.demo.web.controller.BookControllerTest" time="0.019"/>
+    <testcase name="testRemovedBookPage" classname="pl.spring.demo.web.controller.BookControllerTest" time="0.042"/>
+  </testsuite>
+</testrun>

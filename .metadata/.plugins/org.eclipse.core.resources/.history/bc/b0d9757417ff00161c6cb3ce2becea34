@@ -1,0 +1,11 @@
+package pl.spring.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/searchBooks")
+public class BookSearchController {
+
+
+}

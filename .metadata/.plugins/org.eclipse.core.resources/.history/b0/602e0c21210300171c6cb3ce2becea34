@@ -1,0 +1,32 @@
+package pl.spring.demo.web.controller;
+
+import org.junit.Before;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
+
+import pl.spring.demo.controller.LoginController;
+import pl.spring.demo.service.BookService;
+
+public class LoginControllerTest {
+
+	private MockMvc mockMvc;
+	
+	@Mock
+	BookService bookService;
+
+	@InjectMocks
+	LoginController loginController;
+	
+	@Before
+	public void setup() {
+		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+		viewResolver.setPrefix("/WEB-INF/templates/");
+		viewResolver.setSuffix(".html");
+
+		mockMvc = MockMvcBuilders.standaloneSetup(loginController).setViewResolvers(viewResolver).build();
+	}
+}

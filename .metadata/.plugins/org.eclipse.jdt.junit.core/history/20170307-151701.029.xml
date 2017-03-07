@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BookRestServiceTest.testShouldGetSearchResultWithSearchTo" project="webstore" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="testShouldGetSearchResultWithSearchTo" classname="pl.spring.demo.web.rest.BookRestServiceTest" time="0.408"/>
+</testrun>

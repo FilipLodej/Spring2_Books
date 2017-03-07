@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1488047076668_0" label="chess" name="chess"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1488363073185_2" label="business-logic" name="business-logic">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/spring-mvc-zadania-master" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/spring-data-jpa" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/spring-data-model" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/webstore" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1488363032503_1" label="Window Working Set" name="Aggregate for window 1488363032502"/>
+</workingSetManager>

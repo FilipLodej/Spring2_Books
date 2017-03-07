@@ -1,0 +1,69 @@
+package pl.spring.demo.web.controller;
+
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.runners.MockitoJUnitRunner;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.ResultActions;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
+import pl.spring.demo.controller.BookController;
+import pl.spring.demo.enumerations.BookStatus;
+import pl.spring.demo.service.BookService;
+import pl.spring.demo.to.BookTo;
+
+@RunWith(MockitoJUnitRunner.class)
+public class BookControllerTest {
+
+	private MockMvc mockMvc;
+
+	@Mock
+	BookService bookService;
+
+	@InjectMocks
+	BookController bookController;
+
+	@Before
+	public void setup() {
+		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+		viewResolver.setPrefix("/WEB-INF/templates/");
+		viewResolver.setSuffix(".html");
+		mockMvc = MockMvcBuilders.standaloneSetup(bookController).setViewResolvers(viewResolver).build();
+	}
+
+	@Test
+	public void testBooksListPage() throws Exception {
+		// given
+		List<BookTo> allBooks=findAllBooks();
+		Mockito.when(bookService.findAllBooks()).thenReturn(allBooks);
+		// when
+		ResultActions resultActions = mockMvc.perform(get("/books"));
+		// then
+		resultActions.andExpect(view().name("books")).andExpect(model().attribute("bookList", allBooks));
+	}
+
+	private List<BookTo> findAllBooks() {
+		List<BookTo> allBooks = new ArrayList<BookTo>();
+		BookStatus status = BookStatus.FREE;
+		BookTo book1 = new BookTo(1L, "title1", "author1", status);
+		BookTo book2 = new BookTo(2L, "title2", "author2", status);
+		BookTo book3 = new BookTo(3L, "title3", "author3", status);
+
+		allBooks.add(book1);
+		allBooks.add(book2);
+		allBooks.add(book3);
+		return allBooks;
+	}
+}

@@ -1,0 +1,8 @@
+package pl.spring.demo.web.controller;
+
+import org.springframework.test.web.servlet.MockMvc;
+
+public class BookControllerTest {
+
+	private MockMvc mockMvc;
+}
